@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ENG MAKENA BRENDA — Portfolio</title>
+  <style>
+    :root{ --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#0ea5a3; --glass:rgba(255,255,255,0.03); }
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#071020 0%, #0b1220 100%); color:#e6eef6}
+    .container{max-width:900px;margin:36px auto;padding:28px}
+    .card{background:var(--card);border-radius:14px;padding:28px;box-shadow:0 6px 24px rgba(2,6,23,0.6);backdrop-filter:blur(6px)}
+    header{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    .avatar{width:110px;height:110px;border-radius:14px;flex:0 0 110px;background:linear-gradient(135deg,var(--accent),#6ee7b7);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052;letter-spacing:1px}
+    h1{margin:0;font-size:26px}
+    .title{color:var(--muted);margin-top:6px;font-size:14px}
+    .cta{margin-left:auto;display:flex;gap:10px}
+    .btn{padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:var(--glass);color:inherit;text-decoration:none;font-weight:600}
+    main{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+    .section{margin-bottom:18px}
+    .section h3{margin:0 0 10px 0;font-size:15px}
+    p{margin:0;color:var(--muted);line-height:1.6}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .item{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    .item .meta{font-size:13px;color:var(--muted)}
+    .projects{display:grid;gap:12px}
+    .project{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px}
+    .project strong{display:block;color:#fff;margin-bottom:4px}
+    aside .card{padding:18px}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    .contact a{color:inherit;text-decoration:none;padding:8px;border-radius:8px;background:rgba(255,255,255,0.02);display:inline-block}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:880px){main{grid-template-columns:1fr} header{flex-direction:row} .cta{margin-left:0}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">MB</div>
+        <div>
+          <h1>ENG MAKENA BRENDA</h1>
+          <div class="title">Telecommunication & Information Engineer</div>
+        </div>
+        <div class="cta">
+          <a class="btn" href="/Brenda_Makena_RESUME.pdf" download>Download CV</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="section">
+            <h3>About Me</h3>
+            <p>Highly motivated and detail-oriented Telecommunication and Information Engineering graduate with strong technical skills and a passion for innovation. Proven ability to work independently and collaboratively on projects, with excellent communication and problem-solving skills.</p>
+          </div>
+          <div class="section">
+            <h3>Skills</h3>
+            <div class="skills">
+              <span class="skill">Networking</span>
+              <span class="skill">Python</span>
+              <span class="skill">Huawei eNSP</span>
+              <span class="skill">OSPF</span>
+              <span class="skill">Security</span>
+              <span class="skill">AI</span>
+              <span class="skill">Data Analysis</span>
+            </div>
+          </div>
+          <div class="section">
+            <h3>Projects & Highlights</h3>
+            <div class="projects">
+              <div class="project"><strong>Cybersecurity Hackathon 2023</strong><p>Participated in a 64-hour hackathon hosted by the Kenya Cybersecurity and Forensics Association (KCSFA), CAK, and Huawei.</p></div>
+              <div class="project"><strong>Bootcamp Security Finalist</strong><p>Qualified as a finalist in the Huawei Security Bootcamp 2023 after completing advanced security and network labs.</p></div>
+              <div class="project"><strong>Assistive Technology Workshop</strong><p>Collaborated on developing accessible tech solutions for differently abled individuals with City of Vienna.</p></div>
+            </div>
+          </div>
+        </section>
+        <aside>
+          <div class="card">
+            <div class="section">
+              <h3 id="contact">Contact</h3>
+              <div class="contact-list">
+                <a href="mailto:altaviamakena@gmail.com">altaviamakena@gmail.com</a>
+                <a href="https://www.linkedin.com/in/altavia-m-82a900273" target="_blank">LinkedIn</a>
+                <a href="https://github.com/altaviamakena" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <div class="section">
+              <h3>Quick Info</h3>
+              <p><strong>Location:</strong> Nairobi, Kenya</p>
+              <p><strong>Languages:</strong> English, Kiswahili</p>
+              <p><strong>Availability:</strong> Open to opportunities</p>
+            </div>
+          </div>
+        </aside>
+      </main>
+      <footer>© <span id="year"></span> ENG MAKENA BRENDA — Built with ❤️ using HTML & CSS</footer>
+    </div>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
